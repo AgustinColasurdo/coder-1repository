@@ -1,0 +1,771 @@
+/* reseteo limites de pagina */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* HEADER */
+
+.positionSticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.headerContainer {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 2, 1fr
+}
+
+.boxLogo {
+    grid-column: 1 / 2;
+    grid-row: 1 /2;
+}
+
+.boxTitulo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.boxNav {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+header h1 {
+    text-align: center;
+    padding: 30px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: lightgrey;
+}
+
+.iconSize {
+    height: 100px;
+    width: 100px;
+}
+
+.estiloNav :nth-child(1) {
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+/* FOOTER */
+
+#footerPadre {
+    display: grid;
+    border: solid black;
+    background-color: darkgray;
+    height: 200px;
+    grid-template-columns: 10% 1fr 45%;
+    grid-template-rows: 80px 50px 50px;
+    grid-template-areas: "logo1 info2 tel3" "logo1 info2 tel3" "logo1 dir4 em5";
+}
+
+.redesFooter {
+    grid-area: logo1;
+}
+
+.logoFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoFooter {
+    grid-area: info2;
+}
+
+.telFooter {
+    grid-area: tel3;
+}
+
+.direcFooter {
+    grid-area: dir4;
+}
+
+.emailFooter {
+    grid-area: em5;
+}
+
+.imgFooter {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+/* --------MAIN INDEX----------*/
+
+/*COLOR TITULO PRINCIPAL y OTROS*/
+h2 {
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding: 15px
+}
+
+.subtituloOferta {
+    color: white;
+    background-color: black;
+    margin-bottom: 0px;
+}
+
+.imgNormal img {
+    height: 30rem;
+}
+
+.ajusteTarjeta {
+    height: 20rem;
+    width: 20rem;
+}
+
+.tituloEspecial {
+    text-align: center;
+    font-style: italic;
+}
+
+.flecha {
+    width: 50px;
+    height: 40px;
+}
+
+
+
+/* ---OFERTA EDIT---*/
+.containerOferta {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+}
+
+.letraOferta {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+}
+
+
+/* ---CARD EDITS--- */
+
+.letraCard {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.fotoCard {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ---NEW ARRIVAL---*/
+
+.newArrival1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.letraGigante {
+    font-size: 150px;
+    color: black;
+}
+
+.verMas {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.newArrival2 {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.letraGigante2 {
+    font-size: 150px;
+    color: white;
+    background-color: black;
+}
+
+.verMas2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 30px;
+}
+
+
+
+/* ---PLAN CANJE--- */
+
+.estiloPlanCanje {
+    padding: 25px;
+    text-align: center;
+}
+
+/*---------------------------------------------------*/
+/* tarjeta inicial css */
+/*
+.tarjeta1 {
+    background-color: white;
+    padding: 0px;
+    border: solid black 10px;
+    border-radius: 10px;
+    width: 500px;
+    position: relative;
+    left: 50px;
+}
+.fotoCard{
+    height: 400px;
+}
+
+.ofertaRojo {
+    font-size: 15px;
+    color: yellow;
+    background-color: red;
+    border-radius: 15%;
+}
+
+.positionAbsolute {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+}
+/*---------------------------------------------------*/
+
+/* CONTACTO */
+
+
+.tarjetaContacto {
+    border: 5px solid black;
+    padding: 10px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Impa;
+}
+
+.inputContacto {
+    width: 45%;
+    height: 40px;
+    text-align: center;
+}
+
+.formUbi {
+    width: 20%;
+}
+
+.imgAsesor {
+    width: 185px;
+    height: 350px;
+}
+
+.textoContacto {
+    text-align: center;
+}
+
+.tarjetaAsesorPadre {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tarjetaAsesor {
+    border: solid black;
+    width: 197px;
+    color: black;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.aclaraciones {
+    background-color: lightgrey;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    position: relative;
+    top: 15px;
+}
+
+
+
+
+/*---------- PRODUCTOS ------------*/
+
+
+/*----SALE COMO PAN CALIENTE----*/
+h2.tituloTienda {
+    display: flex;
+    font-size: 60px;
+}
+
+.tituloTienda2 {
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+}
+
+.flexPan {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tarjetaPan {
+    text-align: center;
+    width: 400px;
+}
+
+h4.subTarjeta {
+    padding: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.fontTarjeta {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 50px;
+}
+
+.carritoPan {
+    width: 50px;
+}
+
+.textoTachado {
+    text-decoration: line-through;
+}
+
+
+/*GRILLA TIENDA*/
+#tiendaContainer {
+    display: grid;
+    grid-template-columns: 5, 1fr;
+    grid-template-rows: 2, 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+    width: 90vw;
+    margin: 40px;
+    grid-template-areas: "prod1 prod2 prod3 prod4 prod5" "prod6 prod7 prod8 prod9 prod10";
+}
+
+.prod1 {
+    grid-area: prod1;
+}
+
+.prod2 {
+    grid-area: prod2;
+}
+
+.prod3 {
+    grid-area: prod3;
+}
+
+.prod4 {
+    grid-area: prod4;
+}
+
+.prod5 {
+    grid-area: prod5;
+}
+
+.prod6 {
+    grid-area: prod6;
+}
+
+.prod7 {
+    grid-area: prod7;
+}
+
+.prod8 {
+    grid-area: prod8;
+}
+
+.prod9 {
+    grid-area: prod9;
+}
+
+.prod10 {
+    grid-area: prod10;
+}
+
+
+/*-----------TARJETA PRODUCTOS---------*/
+
+.tarjetaProductos {
+    padding: 20px;
+    border: solid gray 5px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    width: 350px;
+    height: 375px;
+    position: relative;
+}
+
+.tarjetaImg {
+    width: 250px;
+    height: 190px;
+}
+
+.carrito {
+    width: 30px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.precioTarjeta {
+    position: absolute;
+    left: 7px;
+    bottom: 3px;
+    background-color: lightgrey;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.newTarjeta {
+    background-color: red;
+    color: yellow;
+    padding: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
+
+
+/* ----------- SERVICIO TECNICO ---------- */
+
+#mainService {
+    background-color: black;
+}
+
+.containerBannerService {
+    display: flex;
+    justify-content: center;
+}
+
+.bannerService {
+    width: 60vw;
+}
+
+.imagenesST {
+    height: 500px;
+    width: 400px;
+    border: solid black;
+}
+
+.imgService {
+    border: solid none white;
+    border-radius: 80px;
+}
+
+.imagser1 {
+    display: flex;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+    padding: 15px;
+
+}
+
+.imagser2 {
+    background-color: white;
+    display: flex;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.videoST {
+    width: 100%;
+    height: 70rem;
+}
+
+
+
+
+/* CAPACITACIONES */
+
+.tituloCapacitaciones {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    margin: 15px;
+}
+
+.padreCapacitaciones {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    width: 70%;
+}
+
+.fontCapac {
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    padding: 15px;
+}
+
+
+.box {
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cuadroCursos {
+    display: grid;
+    margin: 0 auto;
+    width: 50vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 12px;
+    column-gap: 12px;
+}
+
+.imgCuadroCap {
+    width: 100%;
+    height: 100%;
+}
+
+.box1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.box2 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.box5 {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+
+/*POSITION ABSOLUTE*/
+.positionAbsolute {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+}
+
+
+
+
+
+/* ----------------------- MEDIA QUERIES -----------------------*/
+/*----------TABLET----------*/
+
+@media screen and (max-width: 1024px){
+        #tiendaContainer {
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        grid-template-rows: 5, 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        width: 25vw;
+        margin: 15px;
+        grid-template-areas: "prod1 prod2" "prod3 prod4" "prod5 prod6" "prod7 prod8" "prod9 prod10";
+    }
+
+    .tarjetaProductos {
+        width: 280px;
+        height: 350px;
+        position: relative;
+        font-size: 10px;
+    }
+
+    .tarjetaImg {
+        width: 210px;
+        height: 150px;
+    }
+
+    .carrito {
+        width: 25px;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+    }
+
+    .precioTarjeta {
+        position: absolute;
+        left: 7px;
+        bottom: 3px;
+        background-color: lightgrey;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+}
+
+/*-------- MOBILE ---------*/
+
+@media screen and (max-width: 768px) {
+
+    /* ---TOP & INDEX RESPONSIVE---*/
+
+    .iconSize {
+        width: 25px;
+        height: 25px;
+    }
+
+    h1 {
+        width: 5px;
+    }
+
+    .letraGigante {
+        display: none;
+    }
+
+    .letraGigante2 {
+        font-size: 50px;
+    }
+
+    /* ---FOOTER RESPONSIVE--- */
+
+    #footerPadre {
+        font-size: 10px;
+        width: auto;
+        height: 200px;
+        grid-template-columns: 10% 1fr 45%;
+        grid-template-rows: 80px 50px 50px;
+        grid-template-areas: "logo1 info2 tel3" "logo1 info2 tel3" "logo1 dir4 em5";
+    }
+
+    footer h4 {
+        font-size: 15px;
+    }
+
+    /*---PRODUCTOS // MEDIA QUERIES---*/
+
+
+    /*----SALE COMO PAN CALIENTE----*/
+    h2.tituloTienda {
+        display: none;
+    }
+
+    .aclaraciones {
+        display: none;
+    }
+
+    .tituloTienda2 {
+        font-size: 25px;
+    }
+
+    .tarjetaPan {
+        text-align: center;
+        width: 250px;
+    }
+
+    h4.subTarjeta {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .fontTarjeta {
+        font-size: 10px;
+        padding: 40px;
+    }
+
+    .carritoPan {
+        width: 45px;
+    }
+
+    section div.tarjetaPan img {
+        width: 80px;
+    }
+
+    /* QUERIES GRILLA PRODUCTO */
+
+    #tiendaContainer {
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        grid-template-rows: 5, 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        width: 25vw;
+        margin: 15px;
+        grid-template-areas: "prod1 prod2" "prod3 prod4" "prod5 prod6" "prod7 prod8" "prod9 prod10";
+    }
+
+    .tarjetaProductos {
+        width: 210px;
+        height: 290px;
+        position: relative;
+        font-size: 10px;
+    }
+
+    .tarjetaImg {
+        width: 150px;
+        height: 100px;
+    }
+
+    .carrito {
+        width: 10px;
+        position: absolute;
+        right: 2px;
+        bottom: 2px;
+    }
+
+    .precioTarjeta {
+        position: absolute;
+        left: 7px;
+        bottom: 3px;
+        background-color: lightgrey;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+
+
+
+    /*---CAPACICATIONES // MEDIA QUERIES---*/
+
+    .tituloCapacitaciones {
+        font-size: 30px;
+    }
+
+    .fontCapac {
+        font-size: 10px;
+    }
+
+    /*FIN MEDIA QUERIES*/
+}
