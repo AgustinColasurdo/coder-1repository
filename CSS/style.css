@@ -590,7 +590,12 @@ h4.subTarjeta {
 
 
 /* ----------------------- MEDIA QUERIES -----------------------*/
+
+
+
 /*----------TABLET----------*/
+
+/* -----PRODUCTOS----*/
 
 @media screen and (max-width: 1024px){
         #tiendaContainer {
@@ -635,6 +640,16 @@ h4.subTarjeta {
 
 }
 
+
+/* ----CAPACITACIONES----*/
+
+.tituloCapacitaciones {
+    font-size: 60px;
+}
+
+.fontCapac {
+    font-size: 30px;
+}
 /*-------- MOBILE ---------*/
 
 @media screen and (max-width: 768px) {
