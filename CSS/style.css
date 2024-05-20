@@ -223,39 +223,6 @@ h2 {
     text-align: center;
 }
 
-/*---------------------------------------------------*/
-/* tarjeta inicial css */
-/*
-.tarjeta1 {
-    background-color: white;
-    padding: 0px;
-    border: solid black 10px;
-    border-radius: 10px;
-    width: 500px;
-    position: relative;
-    left: 50px;
-}
-.fotoCard{
-    height: 400px;
-}
-
-.ofertaRojo {
-    font-size: 15px;
-    color: yellow;
-    background-color: red;
-    border-radius: 15%;
-}
-
-.positionAbsolute {
-    position: absolute;
-    top: 7px;
-    right: 5px;
-}
-/*---------------------------------------------------*/
-
-/* CONTACTO */
-
-
 .tarjetaContacto {
     border: 5px solid black;
     padding: 10px;
@@ -475,13 +442,7 @@ h4.subTarjeta {
     border: solid black;
 }
 
-.imgService {
-    border: solid none white;
-    border-radius: 80px;
-}
-
-.imagser1 {
-    display: flex;
+.parrafoSer1 {
     color: white;
     text-align: center;
     font-size: 40px;
@@ -491,14 +452,19 @@ h4.subTarjeta {
 
 }
 
-.imagser2 {
+.parrafoSer2 {
     background-color: white;
-    display: flex;
     text-align: center;
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 10px;
     padding: 15px;
+}
+
+.imgSerCentro {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
 }
 
 .videoST {
@@ -591,14 +557,12 @@ h4.subTarjeta {
 
 /* ----------------------- MEDIA QUERIES -----------------------*/
 
-
-
 /*----------TABLET----------*/
 
 /* -----PRODUCTOS----*/
 
-@media screen and (max-width: 1024px){
-        #tiendaContainer {
+@media screen and (max-width: 1024px) {
+    #tiendaContainer {
         display: grid;
         grid-template-columns: 2, 1fr;
         grid-template-rows: 5, 1fr;
@@ -638,18 +602,38 @@ h4.subTarjeta {
         font-size: 12px;
     }
 
+
+    /*----SERVICIOI TECNICO-----*/
+
+    
+    .parrafoSer1 {
+        font-size: 30px;
+    }
+
+    .parrafoSer2 {
+        font-size: 30px;
+    }
+
+    .imgSerCentro {
+        display: none;
+    }
+
+    .videoST {
+        height: 20rem;
+    }
+
+    /* ----CAPACITACIONES----*/
+
+    .tituloCapacitaciones {
+        font-size: 60px;
+    }
+
+    .fontCapac {
+        font-size: 30px;
+    }
 }
 
 
-/* ----CAPACITACIONES----*/
-
-.tituloCapacitaciones {
-    font-size: 60px;
-}
-
-.fontCapac {
-    font-size: 30px;
-}
 /*-------- MOBILE ---------*/
 
 @media screen and (max-width: 768px) {
@@ -688,10 +672,10 @@ h4.subTarjeta {
         font-size: 15px;
     }
 
-    /*---PRODUCTOS // MEDIA QUERIES---*/
 
+    /*-------PRODUCTOS // MEDIA QUERIES--------*/
 
-    /*----SALE COMO PAN CALIENTE----*/
+    /*-----SALE COMO PAN CALIENTE-----*/
     h2.tituloTienda {
         display: none;
     }
@@ -771,8 +755,29 @@ h4.subTarjeta {
 
 
 
+    /*------SERVICIO TECNICO // QUERIES------*/
 
-    /*---CAPACICATIONES // MEDIA QUERIES---*/
+    .bannerService {
+        width: 55vw;
+    }
+
+    .parrafoSer1 {
+        font-size: 15px;
+    }
+
+    .parrafoSer2 {
+        font-size: 15px;
+    }
+
+    .imgSerCentro {
+        display: none;
+    }
+
+    .videoST {
+        height: 10rem;
+    }
+
+    /*------CAPACICATIONES // MEDIA QUERIES------*/
 
     .tituloCapacitaciones {
         font-size: 30px;
